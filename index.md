@@ -11,7 +11,7 @@ humandate: "April 2020"    # human-readable dates for the workshop (e.g., "Feb 1
 startdate: 2020-04-10      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: TBD        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Regina Avila", "Trevor Keller", "Justin Senseney", "Josh Taillon", "Zach Trautt", "Daniel Wheeler"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["Chandler Becker", "Zach Trautt", "and others"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["regina.avila@nist.gov", "trevor.keller@nist.gov", "justin.senseney@nist.gov", "joshua.taillon@nist.gov", "zachary.trautt@nist.gov", "daniel.wheeler@nist.gov"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -287,7 +287,7 @@ to match your plans.  You may also want to change 'Day 1' and 'Day
     The schedule is planned for about 4.5 hours total of instruction for this topic. The detailed
     schedule will be determined by each instructor and the learners in their cohort,
     and communicated separately. We will be following the curriculum of the
-    <a href="http://swcarpentry.github.io/shell-novice/">Unix Shell</a> carpentry
+    <a href="{{ site.course_notes }}">{{ site.title }}</a> carpentry
     course, adapted for online teaching.
 </p>
 {% comment %}
@@ -349,7 +349,7 @@ Also add some better formatting to these tabs
   .tab-content > .active {
         background: #f7f7f7;
         border: #ddd solid 1px;
-        padding: 1em 1em;
+        padding: 1em 1em 0.5em 1em;
   }
 </style>
 
